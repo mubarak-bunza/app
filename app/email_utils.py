@@ -136,7 +136,7 @@ def send_trial_end_soon_email(user):
 def send_activation_email(email, activation_link):
     send_email(
         email,
-        f"Just one more step to join SimpleLogin",
+        f"Verify your email",
         render(
             "transactional/activation.txt",
             activation_link=activation_link,
